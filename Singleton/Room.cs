@@ -11,7 +11,7 @@ namespace Singleton
             Console.WriteLine("Room instance created.");
         }
 
-        public static Room Instance
+        public static Room getInstance()
         {
             get
             {
