@@ -3,29 +3,19 @@ namespace Singleton
 {
     public class Room
     {
-        
         private static Room instance;
-
-        
         private Room()
         {
             Console.WriteLine("Room instance created.");
         }
-
-        
         public static Room getInstance()
         {
-            
-            
-                
                 if (instance == null)
                 {
                     instance = new Room();
                 }
                 return instance;
-            
         }
-
         
         public void Enter()
         {
