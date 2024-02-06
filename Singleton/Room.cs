@@ -3,7 +3,6 @@ namespace Singleton
 {
     public class Room
     {
-        // Private static instance variable
         private static Room instance;
 
         // Private constructor to prevent instantiation from outside the class
@@ -12,7 +11,6 @@ namespace Singleton
             Console.WriteLine("Room instance created.");
         }
 
-        // Public method to get the singleton instance
         public static Room Instance
         {
             get
@@ -25,8 +23,6 @@ namespace Singleton
                 return instance;
             }
         }
-
-        // Other methods and properties of the Room class can be added here
         public void Enter()
         {
             Console.WriteLine("Someone entered the room.");
