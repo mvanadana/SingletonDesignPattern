@@ -7,11 +7,11 @@ namespace Singleton
         static void Main(string[] args)
         {
 
-            Room myRoom = Room.getInstance();
+            Room myRoom = Room.GetInstance();
 
             myRoom.Enter();
 
-            Room anotherRoom = Room.getInstance();
+            Room anotherRoom = Room.GetInstance();
             
             Console.WriteLine("Are both instances the same? " + (myRoom == anotherRoom));
         }
