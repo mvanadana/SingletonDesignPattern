@@ -8,7 +8,7 @@ namespace Singleton
         {
             Console.WriteLine("Room instance created.");
         }
-        public static Room getInstance()
+        public static Room GetInstance()
         {
                 if (instance == null)
                 {
