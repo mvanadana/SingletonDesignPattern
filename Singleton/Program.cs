@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Singleton
 {
@@ -7,11 +7,12 @@ namespace Singleton
         static void Main(string[] args)
         {
 
-            Room myRoom = Room.Instance;
-            myRoom.Enter();
-            Room anotherRoom = Room.Instance;
+            Room myRoom = Room.getInstance();
 
-            // Check if both references point to the same instance
+            myRoom.Enter();
+
+            Room anotherRoom = Room.getInstance();
+            
             Console.WriteLine("Are both instances the same? " + (myRoom == anotherRoom));
         }
     }
